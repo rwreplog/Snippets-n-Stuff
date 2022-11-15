@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body, .container
+    {
+        height: 100%;
+    }
+
+        .container:before
+        {
+            content: '';
+            height: 100%;
+            float: left;
+        }
+
+    .header
+    {
+        margin-bottom: 10px;
+        background-color: #6ea364;
+    }
+    .content
+    {
+        position: relative;
+        z-index: 1;
+    }
+        .content:after
+        {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+    .wrapper
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+        .wrapper > div
+        {
+            height: 100%;
+        }
+
+    .right-content
+    {
+        background-color: purple;
+        overflow: auto;
+    }
+
+    .left-content
+    {
+        
+        background-color: orange;
+        float: left;
+        margin-left: 10px;
+    }
+</style>
+
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <p>The Header div height is not fixed (But he can be if you want it to)</p>
+                <p>This Layout has been tested on: IE10, IE9, IE8, FireFox, Chrome, Safari, Opera. using Pure CSS 2.1 only</p>
+            </div>
+            <div class="content">
+                <div class="wrapper">
+                    <div class="left-content">
+                        <p>You can fix the width of this content.</p>
+                        <p>if you wont, his width will stretch just as it needs to.</p>
+                    </div>
+                    <div class="right-content">
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
